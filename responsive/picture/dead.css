@@ -1,0 +1,5 @@
+body img{		/* has to be section of where the image is inorder to be changed*/
+	width: 120%;
+	max-width: 400px;
+	margin-bottom: .5em;
+}
