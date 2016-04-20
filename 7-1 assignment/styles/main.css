@@ -132,11 +132,7 @@ article h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
 }
-article img {
-	float: right;
-	margin: .5em 0 1em 1em;
-	border: 1px solid black;
-}
+
 
 /* the styles for the aside */
 aside {
@@ -168,4 +164,16 @@ footer p {
 	text-align: center;
 	color: white;
 	padding: 1em 0;
+}
+
+figure{
+	float: right;
+	margin-left: 1.5em;
+}
+figcaption{
+	display: block;
+	border-bottom: 1px solid black;
+	font-weight: bold;
+	padding-top: .25em;
+	margin-bottom: 1em;
 }
