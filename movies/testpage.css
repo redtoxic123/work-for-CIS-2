@@ -1,0 +1,46 @@
+body{
+	width: 964px;
+	background-color:rgb(211,179,43);
+	margin: 15px auto;
+}
+
+nav{
+	height: 50px;
+	background-color: gray;
+}
+
+main{
+	width: 963px;
+	float: left;
+	background-color: #656363;
+	height:350px;
+}
+footer{
+	clear:both;
+	text-align: center;
+	font-size: 21px
+}
+table, th ,td{
+	border:1px solid black;
+	border-collapse: collapse;
+}
+th, td{
+	padding:5px;
+}
+h5{
+	text-align: center;
+	background-color: red;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 23px
+}
+h2{
+	text-align: center;
+	background-color: teal;
+	margin: 5px;
+
+}
+p{
+	color: white;
+	margin-left: 5px;
+}
