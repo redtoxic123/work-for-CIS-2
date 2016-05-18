@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="testpage.css">
+	
+	<link rel="stylesheet" type="text/css" href="tacos.css">
+	
+
+</head>
+<body>
+<header><h2>Antonio's Work</h2>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="images/tress.png" style="width:90%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="images/park2.png" style="width:90%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="images/apple.png" style="width:90%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="images/movies.jpg" style="width:90%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="images/good.jpg" style="width:90%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="images/tacos.jpg" style="width:90%">
+  <div class="text"></div>
+</div>
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length} ;
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</header>
+<main>
+	<table border="1" style="100%">
+	<tr>
+		<td>The Park city Gazette</td>
+		<td><a href="http://antoniodeaguilar.neocities.org/park/tacos.html">april 14th 2016</a></td>
+	</tr>
+
+	<tr>		
+	<td>Sunny Acres</td>
+	<td><a href="http://antoniodeaguilar.neocities.org/sunny/sunny.html">April 5th 2016</a></td>
+		</tr>
+
+	<tr>
+	<td>Tree and book</td>
+	<td><a href="http://antoniodeaguilar.neocities.org/tree/treebook.html">April 26th 2016</a></td>
+	</tr>
+
+	<tr>
+	<td>Used Cars</td>
+	<td><a href="http://antoniodeaguilar.neocities.org/may/berst.htm">May 5th 2016</a></td>
+		</tr>
+	<tr>
+		<td>Devon valley film festival</td>
+		<td><a href="http://antoniodeaguilar.neocities.org/film/basic.html">May 3ed 2016</a></td>
+	</tr>
+
+	<tr>
+		<td>Sundown Spa and Resort</td>
+		<td><a href="http://antoniodeaguilar.neocities.org/good%20health/good.html">April 28th 2016</a></td>
+	</tr>
+		</table>
+</main>
+<footer><h1>Antonio D. Aguilar</h1></footer>
+</body>
+</html>
