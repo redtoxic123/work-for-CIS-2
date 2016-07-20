@@ -1,0 +1,31 @@
+<html>
+
+<head>
+<title>HTML and JavaScript</title>
+<script>
+function apply_style()
+{
+  var textColor = LeftFrame.document.StyleForm.TextColor.value;
+  var cellColor = LeftFrame.document.StyleForm.CellColor.value;
+
+  if (textColor == cellColor)
+  {
+    alert("Text color and cell color\nmust be different.");
+    return;
+  }
+
+  var textElement = RightFrame.document.getElementById("MessageText");
+  var cellElement = RightFrame.document.getElementById("MessageCell");
+  textElement.style.color = textColor;
+  cellElement.style.backgroundColor = cellColor;
+  return;
+}
+</script>
+</head>
+
+<frameset cols="50%,*">
+  <frame name="LeftFrame" src="left2.html">
+  <frame name="RightFrame" src="right2.html">
+</frameset>
+
+</html>
