@@ -1,25 +1,14 @@
 body{
 	width: 964px;
-	background-color: black;
+	background-color: white;
 	margin: 15px auto;
 	border:3px solid red;
-	height: 1150px;
-	color:red;
 }
 header{
 	border-bottom: 2px solid #ef9c00 ;
 	background-color: black;
-	background-image: truth.jpg;
-	max-height: 700px;
 }
-h5{
-	word-spacing: 153px;
-	font-size: 29px;
-	text-align: center;
-	height: 35px;
-	margin-top: 10px;
-	margin-bottom:0px;
-}
+
 @font-face { font-family: m; src: url('m.TTF'); } 
 h2{}
 main{
@@ -38,7 +27,7 @@ footer{
 @font-face { font-family: b; src: url('b.TTF'); } 
 table{
 	width: 959px;
-	height: 480px;
+	height: 350px;
 	border-color: yellow;
 	color: yellow;
 	font-family: b;
